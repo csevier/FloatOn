@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vase.png-4c144847e8c99e4434ddba686bf91f47.stex"
+path="res://.import/seed.png-5e34b95af3d8f3db661c517b4719100e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vase.png"
-dest_files=[ "res://.import/vase.png-4c144847e8c99e4434ddba686bf91f47.stex" ]
+source_file="res://assets/images/temp/seed.png"
+dest_files=[ "res://.import/seed.png-5e34b95af3d8f3db661c517b4719100e.stex" ]
 
 [params]
 

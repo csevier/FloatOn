@@ -81,7 +81,7 @@ _global_script_class_icons={
 [application]
 
 config/name="FloatOn"
-run/main_scene="res://Stage.tscn"
+run/main_scene="res://scenes/game/Stage.tscn"
 config/icon="res://icon.png"
 
 [autoload]

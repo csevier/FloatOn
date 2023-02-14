@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/window.png-be7b06f66c81a4a75d8c64b23481294c.stex"
+path="res://.import/danelion.png-ab26491285474052565d06d86cd03416.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://window.png"
-dest_files=[ "res://.import/window.png-be7b06f66c81a4a75d8c64b23481294c.stex" ]
+source_file="res://assets/images/temp/danelion.png"
+dest_files=[ "res://.import/danelion.png-ab26491285474052565d06d86cd03416.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sideWindow.png-eb0c137037b45f011902cfa6be09a493.stex"
+path="res://.import/pot.png-4683f8fe01d11302b97f7618e7c9c205.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sideWindow.png"
-dest_files=[ "res://.import/sideWindow.png-eb0c137037b45f011902cfa6be09a493.stex" ]
+source_file="res://assets/images/temp/pot.png"
+dest_files=[ "res://.import/pot.png-4683f8fe01d11302b97f7618e7c9c205.stex" ]
 
 [params]
 

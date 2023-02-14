@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rug.png-ec74f5e3a9853b1774f02ed842bf578a.stex"
+path="res://.import/rug.png-9c125e2f0af75a0f3457c5d88ae28bc9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rug.png"
-dest_files=[ "res://.import/rug.png-ec74f5e3a9853b1774f02ed842bf578a.stex" ]
+source_file="res://assets/images/temp/rug.png"
+dest_files=[ "res://.import/rug.png-9c125e2f0af75a0f3457c5d88ae28bc9.stex" ]
 
 [params]
 
