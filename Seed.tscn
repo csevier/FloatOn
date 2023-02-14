@@ -47,7 +47,7 @@ gravity_scale = 0.0
 script = ExtResource( 2 )
 
 [node name="Seed" type="Sprite" parent="."]
-position = Vector2( 3.49246e-10, 7.27596e-12 )
+position = Vector2( 0, 10 )
 texture = ExtResource( 1 )
 offset = Vector2( -71, -20 )
 
@@ -57,7 +57,6 @@ anims/RESET = SubResource( 4 )
 anims/wiggle = SubResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -10 )
 shape = SubResource( 3 )
 
 [node name="AimLine" type="Line2D" parent="."]
