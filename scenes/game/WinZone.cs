@@ -16,6 +16,5 @@ public class WinZone : Sprite
     {
         Seed seed = (Seed)body;
         this.EmitSignal(nameof(GameWon), seed.Clicks);
-        seed.StopAndDestroySeed();
     }
 }

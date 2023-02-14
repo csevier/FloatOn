@@ -7,16 +7,15 @@ public class Seed : RigidBody2D
     private Vector2 StartingPosition;
     [Signal]
     public delegate void SeedDied();
-    private Node2D _seed; 
-
     public int Clicks { get; private set; } = 0;
     [Export]
     public float PuffForce { get; set; } = 350;
+    private Label _gameOverLabel;
 
     public override void _Ready()
     {
-        this._seed = GetNode<Node2D>("Seed");
         this.StartingPosition = this.Position;
+        this._gameOverLabel = GetNode<Label>("Camera2D/GameOver");
     }
     public override void _PhysicsProcess(float delta)
     {
@@ -30,11 +29,6 @@ public class Seed : RigidBody2D
             }
             this.ApplyImpulse(new Vector2(0,0), GetPuffVelocity());
         }
-        if(this.Position.y > 600)
-        {
-            this.EmitSignal(nameof(SeedDied));
-            this.StopAndDestroySeed();
-        }
     }
 
     private Vector2 GetPuffVelocity()
@@ -44,9 +38,21 @@ public class Seed : RigidBody2D
         return puffDirection;
     }
 
-    public void StopAndDestroySeed()
+    public void StopSeed()
     {
-        this.SetDeferred("Mode", ModeEnum.Static);
-        this.QueueFree();
+        this.SetPhysicsProcess(false);
+        this.Sleeping = true;
+    }
+    public void OnSeedDied()
+    {
+        this.StopSeed();
+        this._gameOverLabel.Show();
+    }
+
+    public void OnGameWon(int clicks)
+    {
+        this.StopSeed();
+        this._gameOverLabel.Text = $"You Won in {clicks} clicks!";
+        this._gameOverLabel.Show();
     }
 }

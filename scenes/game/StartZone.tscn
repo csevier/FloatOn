@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/images/temp/danelion.png" type="Texture" id=2]
+[ext_resource path="res://scenes/game/Seed.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/images/temp/pot.png" type="Texture" id=4]
+
+[node name="StartZone" type="Node2D"]
+
+[node name="Pot" type="Sprite" parent="."]
+scale = Vector2( 0.496593, 0.496593 )
+texture = ExtResource( 4 )
+
+[node name="Dandelion" type="Sprite" parent="."]
+position = Vector2( 3, 58 )
+scale = Vector2( 0.316707, 0.321895 )
+texture = ExtResource( 2 )
+offset = Vector2( -69.4648, -512.589 )
+
+[node name="Seed" parent="." instance=ExtResource( 3 )]
+position = Vector2( -14, -103 )
+scale = Vector2( 0.316707, 0.321895 )
+mode = 1
