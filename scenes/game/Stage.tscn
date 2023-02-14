@@ -1,0 +1,137 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://scenes/game/Seed.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/game/Stage.cs" type="Script" id=2]
+[ext_resource path="res://assets/images/temp/danelion.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/temp/pot.png" type="Texture" id=4]
+[ext_resource path="res://scenes/game/WinZone.cs" type="Script" id=5]
+[ext_resource path="res://assets/images/temp/window.png" type="Texture" id=6]
+[ext_resource path="res://assets/images/temp/pictureFrame.png" type="Texture" id=7]
+[ext_resource path="res://assets/images/temp/rug.png" type="Texture" id=8]
+[ext_resource path="res://assets/images/temp/sideWindow.png" type="Texture" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 74.5077, 13.0549 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -222.0
+margin_top = -303.0
+margin_right = -182.0
+margin_bottom = -263.0
+rect_scale = Vector2( 51.3962, 25.6802 )
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = -2254.0
+margin_top = -304.0
+margin_right = -2214.0
+margin_bottom = -264.0
+rect_scale = Vector2( 51.3962, 25.6802 )
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+margin_left = -224.0
+margin_top = 722.0
+margin_right = -184.0
+margin_bottom = 762.0
+rect_scale = Vector2( 51.3962, 25.6802 )
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+margin_left = -2254.0
+margin_top = 722.0
+margin_right = -2214.0
+margin_bottom = 762.0
+rect_scale = Vector2( 51.3962, 25.6802 )
+
+[node name="Pot" type="Sprite" parent="."]
+position = Vector2( 148, 489 )
+scale = Vector2( 0.496593, 0.496593 )
+texture = ExtResource( 4 )
+
+[node name="SideWindow" type="Sprite" parent="."]
+position = Vector2( 975, 298 )
+scale = Vector2( 2.37413, 1.72991 )
+texture = ExtResource( 9 )
+
+[node name="WinZone" type="Sprite" parent="."]
+position = Vector2( 1202, 331 )
+scale = Vector2( 0.376578, 0.496593 )
+texture = ExtResource( 4 )
+script = ExtResource( 5 )
+
+[node name="Area2D" type="Area2D" parent="WinZone"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WinZone/Area2D"]
+position = Vector2( 4.02747, 112.768 )
+shape = SubResource( 1 )
+
+[node name="Danelion" type="Sprite" parent="."]
+position = Vector2( 151, 546 )
+scale = Vector2( 0.316707, 0.321895 )
+texture = ExtResource( 3 )
+offset = Vector2( -69.4648, -512.589 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 152, 384 )
+scale = Vector2( 0.316707, 0.321895 )
+current = true
+smoothing_enabled = true
+smoothing_speed = 10.0
+
+[node name="GameOver" type="Label" parent="Camera2D"]
+visible = false
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -72.6223
+margin_top = 220.569
+margin_right = 92.3777
+margin_bottom = 234.569
+text = "Game Over!"
+
+[node name="Window" type="Sprite" parent="."]
+position = Vector2( 544, 266 )
+scale = Vector2( 0.60584, 0.60584 )
+texture = ExtResource( 6 )
+
+[node name="PictureFrame" type="Sprite" parent="."]
+position = Vector2( 851, 214 )
+scale = Vector2( 0.283023, 0.283023 )
+texture = ExtResource( 7 )
+
+[node name="Rug" type="Sprite" parent="."]
+position = Vector2( 569, 534 )
+texture = ExtResource( 8 )
+
+[node name="Seed" parent="." instance=ExtResource( 1 )]
+position = Vector2( 152, 384 )
+scale = Vector2( 0.316707, 0.321895 )
+mode = 1
+gravity_scale = 1.0
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Seed"]
+remote_path = NodePath("../../Camera2D")
+update_rotation = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 1283, 144 )
+scale = Vector2( 1.70499, 58.9265 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2( -19.9999, 194 )
+scale = Vector2( 1.70499, 58.9265 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2( 584, -141 )
+rotation = 1.5708
+scale = Vector2( 1.70499, 79.0465 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+shape = SubResource( 2 )

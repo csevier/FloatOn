@@ -8,6 +8,76 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Object",
+"class": "InputEventDisplayNameUtil",
+"language": "GDScript",
+"path": "res://addons/utils/input_map/input_event_display_name_util.gd"
+}, {
+"base": "Object",
+"class": "InputEventUtil",
+"language": "GDScript",
+"path": "res://addons/utils/input_map/input_event_util.gd"
+}, {
+"base": "Reference",
+"class": "InputMouseSettings",
+"language": "GDScript",
+"path": "res://addons/utils/input_map/input_mouse_settings.gd"
+}, {
+"base": "Object",
+"class": "InputPromptUtil",
+"language": "GDScript",
+"path": "res://addons/utils/input_map/input_prompt_util.gd"
+}, {
+"base": "WindowDialog",
+"class": "InputRemapDialog",
+"language": "GDScript",
+"path": "res://scenes/ui/settings/input_remap_dialog.gd"
+}, {
+"base": "Reference",
+"class": "InputSettingsAction",
+"language": "GDScript",
+"path": "res://addons/utils/input_map/input_settings_action.gd"
+}, {
+"base": "Reference",
+"class": "InputSettingsActionWrapper",
+"language": "GDScript",
+"path": "res://scenes/ui/settings/input_settings_action_wrapper.gd"
+}, {
+"base": "Reference",
+"class": "InputSettingsCategory",
+"language": "GDScript",
+"path": "res://addons/utils/input_map/input_settings_category.gd"
+}, {
+"base": "Reference",
+"class": "InputSettingsCategoryReader",
+"language": "GDScript",
+"path": "res://addons/utils/input_map/input_settings_category_reader.gd"
+}, {
+"base": "Reference",
+"class": "Stopwatch",
+"language": "GDScript",
+"path": "res://addons/utils/stopwatch.gd"
+}, {
+"base": "Button",
+"class": "TransitionButton",
+"language": "GDScript",
+"path": "res://scenes/components/transition_button/transition_button.gd"
+} ]
+_global_script_class_icons={
+"InputEventDisplayNameUtil": "",
+"InputEventUtil": "",
+"InputMouseSettings": "",
+"InputPromptUtil": "",
+"InputRemapDialog": "",
+"InputSettingsAction": "",
+"InputSettingsActionWrapper": "",
+"InputSettingsCategory": "",
+"InputSettingsCategoryReader": "",
+"Stopwatch": "",
+"TransitionButton": ""
+}
+
 [application]
 
 config/name="FloatOn"
