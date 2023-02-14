@@ -35,7 +35,7 @@ public class Seed : RigidBody2D
             Clicks+=1;
             if(!IsFloating)
             {
-                this.Mode = ModeEnum.Rigid;
+                this.Mode = ModeEnum.Character;
                 this.IsFloating = true;
             }
             this.ApplyImpulse(new Vector2(0,0), GetPuffVelocity());

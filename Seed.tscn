@@ -43,6 +43,7 @@ tracks/0/keys = {
 }
 
 [node name="RigidBody2D" type="RigidBody2D"]
+scale = Vector2( 1.00259, 1.03784 )
 gravity_scale = 0.0
 script = ExtResource( 2 )
 

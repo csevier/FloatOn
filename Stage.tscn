@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Seed.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Stage.cs" type="Script" id=2]
@@ -8,18 +8,21 @@
 [ext_resource path="res://window.png" type="Texture" id=6]
 [ext_resource path="res://pictureFrame.png" type="Texture" id=7]
 [ext_resource path="res://rug.png" type="Texture" id=8]
+[ext_resource path="res://sideWindow.png" type="Texture" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 74.5077, 13.0549 )
+
+[sub_resource type="RectangleShape2D" id=2]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -229.0
-margin_top = -304.0
-margin_right = -189.0
-margin_bottom = -264.0
+margin_left = -222.0
+margin_top = -303.0
+margin_right = -182.0
+margin_bottom = -263.0
 rect_scale = Vector2( 51.3962, 25.6802 )
 
 [node name="ColorRect2" type="ColorRect" parent="."]
@@ -36,14 +39,26 @@ margin_right = -184.0
 margin_bottom = 762.0
 rect_scale = Vector2( 51.3962, 25.6802 )
 
+[node name="ColorRect4" type="ColorRect" parent="."]
+margin_left = -2254.0
+margin_top = 722.0
+margin_right = -2214.0
+margin_bottom = 762.0
+rect_scale = Vector2( 51.3962, 25.6802 )
+
 [node name="Pot" type="Sprite" parent="."]
 position = Vector2( 148, 489 )
 scale = Vector2( 0.496593, 0.496593 )
 texture = ExtResource( 4 )
 
+[node name="SideWindow" type="Sprite" parent="."]
+position = Vector2( 975, 298 )
+scale = Vector2( 2.37413, 1.72991 )
+texture = ExtResource( 9 )
+
 [node name="WinZone" type="Sprite" parent="."]
-position = Vector2( 919, 488 )
-scale = Vector2( 0.496593, 0.496593 )
+position = Vector2( 1202, 331 )
+scale = Vector2( 0.376578, 0.496593 )
 texture = ExtResource( 4 )
 script = ExtResource( 5 )
 
@@ -64,6 +79,7 @@ position = Vector2( 152, 384 )
 scale = Vector2( 0.316707, 0.321895 )
 current = true
 smoothing_enabled = true
+smoothing_speed = 10.0
 
 [node name="GameOver" type="Label" parent="Camera2D"]
 visible = false
@@ -97,3 +113,25 @@ gravity_scale = 1.0
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Seed"]
 remote_path = NodePath("../../Camera2D")
 update_rotation = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 1283, 144 )
+scale = Vector2( 1.70499, 58.9265 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2( -19.9999, 194 )
+scale = Vector2( 1.70499, 58.9265 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource( 2 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2( 584, -141 )
+rotation = 1.5708
+scale = Vector2( 1.70499, 79.0465 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+shape = SubResource( 2 )
