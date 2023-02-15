@@ -23,9 +23,6 @@ margin_left = -198.0
 margin_top = -111.5
 margin_right = 198.0
 margin_bottom = 111.5
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 margin_right = 396.0
@@ -34,12 +31,12 @@ theme = ExtResource( 1 )
 text = "Game Over"
 align = 1
 
-[node name="RetryBtn" parent="VBoxContainer" instance=ExtResource( 2 )]
+[node name="RetryBtn" type="Button" parent="VBoxContainer"]
 margin_top = 91.0
 margin_right = 396.0
 margin_bottom = 155.0
 text = "Retry"
-align = 1
+flat = true
 
 [node name="MainMenuBtn" parent="VBoxContainer" instance=ExtResource( 2 )]
 margin_top = 159.0
@@ -48,3 +45,5 @@ margin_bottom = 223.0
 text = "Main Menu"
 align = 1
 scene_to_load = "res://scenes/etc/title.tscn"
+
+[connection signal="pressed" from="VBoxContainer/RetryBtn" to="." method="_on_RetryBtn_pressed"]

@@ -5,10 +5,10 @@ const PROJ_SETTING_TRANSITION_MGR_DEF_SPEED = "global/transition_mgr_default_spe
 
 
 const AUTOLOADS = {
-	"TransitionMgr": "res://addons/utils/transition_mgr.tscn",
-	"ScreenshotMgr": "res://addons/utils/screenshot_mgr.tscn",
-	"InputMapMgr": "res://addons/utils/input_map/input_map_mgr.gd",
-	"VolumeSettingsMgr": "res://addons/utils/volume_settings_mgr.gd",
+	"TransitionMgr": "res://addons/godot_project_starter/utils/transition_mgr.tscn",
+	"ScreenshotMgr": "res://addons/godot_project_starter/utils/screenshot_mgr.tscn",
+	"InputMapMgr": "res://addons/godot_project_starter/utils/input_map/input_map_mgr.gd",
+	"VolumeSettingsMgr": "res://addons/godot_project_starter/utils/volume_settings_mgr.gd",
 }
 
 

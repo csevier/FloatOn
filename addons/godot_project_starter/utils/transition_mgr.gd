@@ -38,6 +38,15 @@ func transition_to(scene_path: String, speed_seconds:float = -1.0, include_sound
 	$fadeAnimation.play("fadeOut", -1, _animation_speed)
 
 
+func reload_current_scene(speed_seconds: float = -1.0, include_sound: bool = false) -> void:
+	var scene_path = get_tree().current_scene.filename
+	if !scene_path:
+		printerr("TransitionMgr: could not get scene file path from current scene.")
+		return
+	transition_to(scene_path, speed_seconds, include_sound)
+	
+
+
 func _on_fadeAnimation_animation_finished(anim_name):
 	if anim_name == "fadeOut":
 		var results = get_tree().change_scene(_scene_path)

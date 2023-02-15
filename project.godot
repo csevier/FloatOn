@@ -10,24 +10,94 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Object",
+"class": "AngleUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/angle_util.gd"
+}, {
+"base": "Object",
+"class": "ArrayUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/array_util.gd"
+}, {
+"base": "Object",
+"class": "BitFlagUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/bit_flag_util.gd"
+}, {
+"base": "Node",
+"class": "Camera3DMove",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/3d/camera/camera3d_move.gd"
+}, {
+"base": "Node",
+"class": "CameraLimiter2D",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/camera/behavior/camera_limiter.gd"
+}, {
+"base": "Node",
+"class": "CameraMove2D",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/camera/behavior/camera_move.gd"
+}, {
+"base": "Node",
+"class": "CameraShake2D",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/camera/behavior/camera_shake.gd"
+}, {
+"base": "Node",
+"class": "CameraZoom2D",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/camera/behavior/camera_zoom.gd"
+}, {
+"base": "Position2D",
+"class": "Circle2D",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/shape/circle_2d.gd"
+}, {
+"base": "CollisionShape",
+"class": "CollisionShapeEx",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/3d/shape/collision_shape_ex.gd"
+}, {
+"base": "MarginContainer",
+"class": "DistributionEditorPlugin",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/util/distribution/distribution_editor_plugin.gd"
+}, {
+"base": "Object",
+"class": "EnumUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/enum_util.gd"
+}, {
+"base": "Object",
+"class": "FileUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/file_util.gd"
+}, {
+"base": "Object",
+"class": "GodotHelperPackSettings",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/godot_helper_pack_settings.gd"
+}, {
+"base": "Object",
 "class": "InputEventDisplayNameUtil",
 "language": "GDScript",
-"path": "res://addons/utils/input_map/input_event_display_name_util.gd"
+"path": "res://addons/godot_project_starter/utils/input_map/input_event_display_name_util.gd"
 }, {
 "base": "Object",
 "class": "InputEventUtil",
 "language": "GDScript",
-"path": "res://addons/utils/input_map/input_event_util.gd"
+"path": "res://addons/godot_project_starter/utils/input_map/input_event_util.gd"
 }, {
 "base": "Reference",
 "class": "InputMouseSettings",
 "language": "GDScript",
-"path": "res://addons/utils/input_map/input_mouse_settings.gd"
+"path": "res://addons/godot_project_starter/utils/input_map/input_mouse_settings.gd"
 }, {
 "base": "Object",
 "class": "InputPromptUtil",
 "language": "GDScript",
-"path": "res://addons/utils/input_map/input_prompt_util.gd"
+"path": "res://addons/godot_project_starter/utils/input_map/input_prompt_util.gd"
 }, {
 "base": "WindowDialog",
 "class": "InputRemapDialog",
@@ -37,7 +107,7 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "InputSettingsAction",
 "language": "GDScript",
-"path": "res://addons/utils/input_map/input_settings_action.gd"
+"path": "res://addons/godot_project_starter/utils/input_map/input_settings_action.gd"
 }, {
 "base": "Reference",
 "class": "InputSettingsActionWrapper",
@@ -47,24 +117,158 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "InputSettingsCategory",
 "language": "GDScript",
-"path": "res://addons/utils/input_map/input_settings_category.gd"
+"path": "res://addons/godot_project_starter/utils/input_map/input_settings_category.gd"
 }, {
 "base": "Reference",
 "class": "InputSettingsCategoryReader",
 "language": "GDScript",
-"path": "res://addons/utils/input_map/input_settings_category_reader.gd"
+"path": "res://addons/godot_project_starter/utils/input_map/input_settings_category_reader.gd"
+}, {
+"base": "Node",
+"class": "Mover2D",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/util/mover_2d.gd"
+}, {
+"base": "ReferenceRect",
+"class": "MultiMeshInstanceDistributionArea",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/util/distribution/multi_mesh_instance_distribution_area.gd"
+}, {
+"base": "Node",
+"class": "NodeUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/node_util.gd"
+}, {
+"base": "Node",
+"class": "PolygonUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/util/polygon_util.gd"
+}, {
+"base": "MenuButton",
+"class": "PressableMenuButton",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/control/pressable_menu_button.gd"
+}, {
+"base": "Node",
+"class": "ProjectSettingsHelper",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/project_settings_helper.gd"
+}, {
+"base": "Object",
+"class": "PropertyUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/property_util.gd"
+}, {
+"base": "ReferenceRect",
+"class": "RandomDistributionArea",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/util/distribution/random_distribution_area.gd"
+}, {
+"base": "Node",
+"class": "RandomDistributionAreaLayer",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/util/distribution/random_distribution_area_layer.gd"
+}, {
+"base": "Node",
+"class": "Rect2Util",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/util/rect2_util.gd"
+}, {
+"base": "Node",
+"class": "RotateIt",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/util/rotate_it.gd"
+}, {
+"base": "Node",
+"class": "SceneSoundTrack",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/audio/scene_sound_track.gd"
+}, {
+"base": "Node",
+"class": "ShakeIt",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/util/shake_it.gd"
+}, {
+"base": "Object",
+"class": "Shape2DUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/shape/shape2d_util.gd"
+}, {
+"base": "Node2D",
+"class": "ShapeDraw2D",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/shape/shape_draw_2d.gd"
+}, {
+"base": "Spatial",
+"class": "ShapeDraw3D",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/3d/shape/shape_draw_3d.gd"
+}, {
+"base": "Node",
+"class": "SoundTrackMgr",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/audio/sound_track_mgr.gd"
+}, {
+"base": "Node",
+"class": "State",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/state_machine/state.gd"
+}, {
+"base": "Node",
+"class": "StateMachine",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/state_machine/state_machine.gd"
+}, {
+"base": "Object",
+"class": "StatsUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/stats_util.gd"
+}, {
+"base": "Reference",
+"class": "StopWatch",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/stop_watch.gd"
 }, {
 "base": "Reference",
 "class": "Stopwatch",
 "language": "GDScript",
-"path": "res://addons/utils/stopwatch.gd"
+"path": "res://addons/godot_project_starter/utils/stopwatch.gd"
+}, {
+"base": "Object",
+"class": "StringUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/string_util.gd"
 }, {
 "base": "Button",
 "class": "TransitionButton",
 "language": "GDScript",
 "path": "res://scenes/components/transition_button/transition_button.gd"
+}, {
+"base": "Object",
+"class": "Vector2Util",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/2d/vector/vector2_util.gd"
+}, {
+"base": "Reference",
+"class": "YieldUtil",
+"language": "GDScript",
+"path": "res://addons/godot_helper_pack/core/util/yield_util.gd"
 } ]
 _global_script_class_icons={
+"AngleUtil": "",
+"ArrayUtil": "",
+"BitFlagUtil": "",
+"Camera3DMove": "",
+"CameraLimiter2D": "",
+"CameraMove2D": "",
+"CameraShake2D": "",
+"CameraZoom2D": "",
+"Circle2D": "",
+"CollisionShapeEx": "",
+"DistributionEditorPlugin": "",
+"EnumUtil": "",
+"FileUtil": "",
+"GodotHelperPackSettings": "",
 "InputEventDisplayNameUtil": "",
 "InputEventUtil": "",
 "InputMouseSettings": "",
@@ -74,8 +278,32 @@ _global_script_class_icons={
 "InputSettingsActionWrapper": "",
 "InputSettingsCategory": "",
 "InputSettingsCategoryReader": "",
+"Mover2D": "",
+"MultiMeshInstanceDistributionArea": "",
+"NodeUtil": "",
+"PolygonUtil": "",
+"PressableMenuButton": "",
+"ProjectSettingsHelper": "",
+"PropertyUtil": "",
+"RandomDistributionArea": "res://addons/godot_helper_pack/core/2d/util/distribution/random_distribution_area.svg",
+"RandomDistributionAreaLayer": "res://addons/godot_helper_pack/core/2d/util/distribution/random_distribution_area_layer.svg",
+"Rect2Util": "",
+"RotateIt": "",
+"SceneSoundTrack": "",
+"ShakeIt": "",
+"Shape2DUtil": "",
+"ShapeDraw2D": "",
+"ShapeDraw3D": "",
+"SoundTrackMgr": "",
+"State": "res://addons/godot_helper_pack/core/state_machine/state.svg",
+"StateMachine": "res://addons/godot_helper_pack/core/state_machine/state_machine.svg",
+"StatsUtil": "",
+"StopWatch": "",
 "Stopwatch": "",
-"TransitionButton": ""
+"StringUtil": "",
+"TransitionButton": "",
+"Vector2Util": "",
+"YieldUtil": ""
 }
 
 [application]
@@ -84,9 +312,32 @@ config/name="FloatOn"
 run/main_scene="res://scenes/game/Stage.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Globals="*res://addons/godot_helper_pack/core/globals.gd"
+SignalMgr="*res://addons/godot_helper_pack/core/signal_mgr.gd"
+ServiceMgr="*res://addons/godot_helper_pack/core/service_mgr.gd"
+GlobalBlockingColorChangeMonitor="*res://addons/godot_helper_pack/core/2d/shape/global_blocking_color_monitor.tscn"
+TransitionMgr="*res://addons/godot_project_starter/utils/transition_mgr.tscn"
+ScreenshotMgr="*res://addons/godot_project_starter/utils/screenshot_mgr.tscn"
+InputMapMgr="*res://addons/godot_project_starter/utils/input_map/input_map_mgr.gd"
+VolumeSettingsMgr="*res://addons/godot_project_starter/utils/volume_settings_mgr.gd"
+
 [display]
 
 window/stretch/mode="2d"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/godot_helper_pack/plugin.cfg", "res://addons/godot_project_starter/plugin.cfg" )
+
+[global]
+
+transition_mgr_default_speed=0.5
+
+[godot_helper_pack_plugin]
+
+blocking_global_color=Color( 0.0627451, 0.603922, 0, 1 )
 
 [gui]
 
@@ -102,6 +353,55 @@ reset={
 puff={
 "deadzone": 0.5,
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+toggle_screenshots={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777255,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+pause={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":11,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
+game_over={
+"deadzone": 0.5,
+"events": [  ]
+}
+next_settings_tab={
+"deadzone": 0.5,
+"events": [ Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":5,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
+previous_settings_tab={
+"deadzone": 0.5,
+"events": [ Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":4,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
+move_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":87,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":83,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777234,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":65,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777231,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":68,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777233,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
 

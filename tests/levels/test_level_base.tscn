@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scenes/game/WinZone.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/game/StartZone.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/ui/hud.tscn" type="PackedScene" id=3]
+[ext_resource path="res://tests/levels/WinZone4Test.cs" type="Script" id=4]
+[ext_resource path="res://tests/levels/test_level_base.cs" type="Script" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 516, 50 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 305 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 521, 10 )
+
+[node name="TestLevelBase" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="WinZone" parent="." instance=ExtResource( 1 )]
+position = Vector2( 440, 448 )
+scale = Vector2( 0.448246, 0.485023 )
+script = ExtResource( 4 )
+
+[node name="StartZone" parent="." instance=ExtResource( 2 )]
+position = Vector2( 168, 448 )
+
+[node name="Hud" parent="." instance=ExtResource( 3 )]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 664, 608 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -148, 0 )
+shape = SubResource( 1 )
+
+[node name="ReferenceRect" type="ReferenceRect" parent="."]
+margin_right = 1032.0
+margin_bottom = 600.0
+
+[node name="Boundaries" type="StaticBody2D" parent="."]
+
+[node name="LeftBoundary" type="CollisionShape2D" parent="Boundaries"]
+position = Vector2( 0, 295 )
+shape = SubResource( 2 )
+
+[node name="RightBoundary" type="CollisionShape2D" parent="Boundaries"]
+position = Vector2( 1024, 296 )
+shape = SubResource( 2 )
+
+[node name="TopBoundary" type="CollisionShape2D" parent="Boundaries"]
+position = Vector2( 511, 0 )
+shape = SubResource( 3 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+
+[editable path="StartZone"]
